@@ -1,0 +1,99 @@
+.testimonial {
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  min-height: 650px;
+  // background-image: url('https://htmldemo.net/edubuzz/edubuzz/img/banner/7.png');
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonialImage {
+  img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid orange;
+    margin-left: 2rem;
+    margin-right: 3rem;
+  }
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  color: black;
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: left;
+  max-width: 50%;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+  flex-grow: 1;
+  min-width: 300px;
+}
+
+.testimonialContent {
+  display: block;
+  text-align: left;
+  position: relative;
+  width: 100%;
+}
+.testimonialContent::before {
+  content: '“';
+  font-size: 140px;
+  color: #363636;
+  position: absolute;
+  left: -70px;
+  top: -38px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1;
+}
+
+.author {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 400px;
+  }
+
+  .right {
+    max-width: 70%;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .testimonialImage {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

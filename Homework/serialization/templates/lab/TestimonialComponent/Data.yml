@@ -1,0 +1,31 @@
+﻿---
+ID: '93dfaa67-33dd-5af2-9c3a-e789a842b474'
+Parent: '3eaebc7e-6579-5cb5-b47d-bb500fc1d854'
+Template: 'e269fbb5-3750-427a-9149-7aa950b49301'
+Path: /sitecore/templates/Project/lab/TestimonialComponent/Data
+Languages:
+  - Language: en
+    Versions:
+      - Version: 1
+        Fields:
+          - ID: '25bed78c-4957-4165-998a-ca1b52f67497'
+            Hint: __Created
+            Value: 20250204T095119Z
+          - ID: '52807595-0f8f-4b20-8d2a-cb71d28c6103'
+            Hint: __Owner
+            Value: |
+              sitecore\JssImport
+          - ID: '5dd74568-4d4b-44c1-b513-0af5f4cda34f'
+            Hint: __Created by
+            Value: |
+              sitecore\JssImport
+          - ID: '8cdc337e-a112-42fb-bbb4-4143751e123f'
+            Hint: __Revision
+            Value: '95ad9d8c-04b2-45ef-90bc-f865649bb82d'
+          - ID: 'badd9cf9-53e0-4d0c-bcc0-2d784c282f6a'
+            Hint: __Updated by
+            Value: |
+              sitecore\JssImport
+          - ID: 'd9cf14b1-fa16-4ba6-9288-e8a174d4d522'
+            Hint: __Updated
+            Value: 20250204T095119Z

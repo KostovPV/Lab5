@@ -1,0 +1,38 @@
+﻿---
+ID: 'd56f5bf3-f060-5dc3-a384-f406d513b4b8'
+Parent: '97b802a5-8bde-5e17-a0bd-be84cba396b1'
+Template: '35c61e90-47dd-43dd-83a8-d1c4d5119720'
+Path: /sitecore/layout/Layouts/Project/lab/lab Layout
+SharedFields:
+  - ID: '80334869-86dc-4472-aa89-44cf1b2f6c9b'
+    Hint: Placeholders
+    Value: '{B471BB32-A218-5AAE-B5A5-E53F036FD024}'
+  - ID: '9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4'
+    Hint: __Read Only
+    Value:
+Languages:
+  - Language: en
+    Versions:
+      - Version: 1
+        Fields:
+          - ID: '25bed78c-4957-4165-998a-ca1b52f67497'
+            Hint: __Created
+            Value: 20250203T122456Z
+          - ID: '52807595-0f8f-4b20-8d2a-cb71d28c6103'
+            Hint: __Owner
+            Value: |
+              sitecore\JssImport
+          - ID: '5dd74568-4d4b-44c1-b513-0af5f4cda34f'
+            Hint: __Created by
+            Value: |
+              sitecore\JssImport
+          - ID: '8cdc337e-a112-42fb-bbb4-4143751e123f'
+            Hint: __Revision
+            Value: '55182e3c-304d-4708-9543-fd0c4f773f57'
+          - ID: 'badd9cf9-53e0-4d0c-bcc0-2d784c282f6a'
+            Hint: __Updated by
+            Value: |
+              sitecore\JssImport
+          - ID: 'd9cf14b1-fa16-4ba6-9288-e8a174d4d522'
+            Hint: __Updated
+            Value: 20250211T100853Z

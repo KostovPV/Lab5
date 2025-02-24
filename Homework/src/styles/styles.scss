@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Poppins:300,400,500,600,700');
+html {
+  overflow: hidden;
+  overflow-y: auto;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  width: 100%;
+  color: #414141;
+}
+
+.img {
+  max-width: 100%;
+}
+.img-full img {
+  width: 100%;
+}
+a,
+button {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+a:focus,
+button:focus {
+  text-decoration: none;
+  outline: none;
+}
+input {
+  background: transparent;
+  border-bottom: 1px solid #707070;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #aaaaaa;
+  width: 100%;
+  box-shadow: none;
+  border-radius: 0;
+  border-width: 0 0 1px;
+}
+textarea {
+  resize: vertical;
+  background: transparent;
+  border-bottom: 1px solid #707070;
+  padding: 10px;
+  color: #aaaaaa;
+  width: 100%;
+  font-size: 14px;
+  border-width: 0 0 1px;
+  resize: none;
+  height: 120px;
+}
+textarea:focus {
+  background: transparent;
+  border-bottom: 1px solid #fff;
+  outline: none;
+}
+a:focus,
+a:hover {
+  color: #ffae27;
+  text-decoration: none;
+}
+a,
+button,
+input {
+  outline: medium none;
+  color: #434343;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  color: #434343;
+  margin-top: 0px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+p {
+  margin-bottom: 15px;
+}
+ul li {
+  list-style: none;
+}
+hr {
+  margin: 60px 0;
+  padding: 0px;
+  border-bottom: 1px solid #eceff8;
+  border-top: 0px;
+}
+label {
+  font-size: 15px;
+  font-weight: 400;
+  color: #626262;
+  margin-bottom: 5px;
+}
+
+.button-default {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 12px 24px;
+  background-color: #1f3971;
+  color: white !important;
+  text-decoration: none !important;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.button-default a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.button-default:hover {
+  background-color: orange;
+  color: white !important;
+}
+
+.button-default:hover a {
+  color: white !important;
+}
+
+.button-default > a {
+  background-color: inherit !important;
+  color: inherit !important;
+}
+
+.orange {
+  color: orange;
+}

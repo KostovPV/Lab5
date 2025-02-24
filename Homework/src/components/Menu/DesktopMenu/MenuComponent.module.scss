@@ -1,0 +1,131 @@
+.navBar {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 95px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logoSection {
+  flex: 0 0 25%;
+  max-width: 23%;
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+
+.menuIcon {
+  margin-bottom: 10px;
+}
+
+.menuIcon img {
+  max-width: 50px;
+  height: auto;
+  display: block;
+}
+
+.navList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menuItem {
+  position: relative;
+  margin: 0 10px;
+}
+
+.menuLink {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+/* First-level submenu */
+.subMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0; 
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  white-space: nowrap;
+  z-index: 100;
+  min-width: 200px; 
+}
+
+/* Show first-level submenu */
+.menuItem:hover > .subMenu {
+  display: block;
+}
+
+/* Second-level submenu */
+.subMenu li {
+  position: relative; 
+}
+
+.insideMenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%; 
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  white-space: nowrap;
+  z-index: 101;
+  min-width: 200px;
+  margin-left: 5px; 
+}
+
+/* Show second-level submenu */
+.subMenu li:hover > .insideMenu {
+  display: block;
+}
+
+.insideMenu .insideMenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%; 
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  white-space: nowrap;
+  z-index: 102;
+  min-width: 200px;
+  margin-left: 5px; 
+}
+
+.insideMenu li {
+  position: relative;
+}
+
+.insideMenu li:hover > .insideMenu {
+  display: block;
+}
+
+.subMenu li,
+.insideMenu li {
+  padding-right: 15px;
+}
+
+.menuLink:hover,
+.insideMenu a:hover {
+  color: orange;
+}
+
+/* Hide Menu on Mobile */
+@media (max-width: 994px) {
+  .navBar {
+    display: none;
+  }
+}

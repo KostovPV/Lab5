@@ -1,0 +1,22 @@
+.columnSectionContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 33.33%;
+  padding: 10px;
+}
+
+@media (max-width: 991px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .column {
+    width: 100%;
+  }
+}

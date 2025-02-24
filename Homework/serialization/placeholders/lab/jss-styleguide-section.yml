@@ -1,0 +1,59 @@
+﻿---
+ID: 'd9f5c020-fa80-5b6d-82b3-ca3df0e01c30'
+Parent: 'd2a8fe84-afb4-5c83-9e2f-9036de665084'
+Template: '5c547d4e-7111-4995-95b0-6b561751bf2e'
+Path: '/sitecore/layout/Placeholder Settings/Project/lab/jss-styleguide-section'
+SharedFields:
+  - ID: '7256bdab-1fd2-49dd-b205-cb4873d2917c'
+    Hint: Placeholder Key
+    Value: 'jss-styleguide-section'
+  - ID: '9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4'
+    Hint: __Read Only
+    Value: 1
+  - ID: 'e391b526-d0c5-439d-803e-17512eae6222'
+    Hint: Allowed Controls
+    Value: |
+      {D69F5881-B1C4-5D20-AA43-3893DBDEF1F9}
+      {E800BCC8-A895-546E-BB0E-8C66828B3120}
+      {5D75595C-F154-5FBD-9559-8F433BDC6F1E}
+      {3CA7C9D7-867D-5D20-8789-BBB3812F5CA7}
+      {6697AE43-672D-52BA-9D0F-37C63E690A69}
+      {4500D138-A114-59D4-A782-75FA69E4E568}
+      {ACC0FE02-632A-5D22-AECA-B4E57F1EEB52}
+      {196D7BDE-D3BD-509E-A614-4A6034787CFA}
+      {659E970F-3FE1-5E41-A16A-3EBEFFC25461}
+      {51C186AC-0C96-5204-BB06-9901556F3EDF}
+      {2C49504E-E611-57DE-8378-093DEC3E7E75}
+      {64519F6C-3F55-5D7B-A270-2AB0DF1C2861}
+      {4D6EC8B1-38C0-5A74-86DC-01A4143FD0ED}
+      {9532F469-8337-5777-A397-32001B163FCD}
+      {A5E3C4BC-75E0-5E98-9252-7DC3533B34FA}
+      {5EB801F9-94BE-5D35-B8E5-79749909576F}
+      {D9743E3D-BFDA-5CCE-A31B-1337BDA6E1A3}
+      {0AD890DE-AAFE-55BC-BEB1-9EC7367DF8BC}
+Languages:
+  - Language: en
+    Versions:
+      - Version: 1
+        Fields:
+          - ID: '25bed78c-4957-4165-998a-ca1b52f67497'
+            Hint: __Created
+            Value: 20250203T122451Z
+          - ID: '52807595-0f8f-4b20-8d2a-cb71d28c6103'
+            Hint: __Owner
+            Value: |
+              sitecore\JssImport
+          - ID: '5dd74568-4d4b-44c1-b513-0af5f4cda34f'
+            Hint: __Created by
+            Value: |
+              sitecore\JssImport
+          - ID: '8cdc337e-a112-42fb-bbb4-4143751e123f'
+            Hint: __Revision
+            Value: 'c98fce5a-7de3-4972-93ec-9c21296d99b3'
+          - ID: 'badd9cf9-53e0-4d0c-bcc0-2d784c282f6a'
+            Hint: __Updated by
+            Value: |
+              sitecore\JssImport
+          - ID: 'd9cf14b1-fa16-4ba6-9288-e8a174d4d522'
+            Hint: __Updated
+            Value: 20250203T122503Z

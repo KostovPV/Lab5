@@ -1,0 +1,19 @@
+.funFactorContainer {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.counter {
+  font-size: 40px;
+  font-weight: bold;
+  color: orange;
+}
+
+.text {
+  font-size: 18px;
+  color: white;
+}

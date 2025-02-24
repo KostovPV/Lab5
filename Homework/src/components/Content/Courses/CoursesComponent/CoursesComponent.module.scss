@@ -1,0 +1,82 @@
+.courseSection {
+  width: 100%;
+  min-width: 0;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.containerWrapper {
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1200px; // Ensure a max-width to prevent excessive stretching
+}
+
+.title {
+  color: #2d3e50;
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 6rem;
+  margin: 0 auto;
+  padding: 1rem 2rem 2rem;
+}
+
+.description {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 26px;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+.courseContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+@media (max-width: 991px) {
+  .courseContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .courseContainer {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .containerWrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .title,
+  .description {
+    text-align: left;
+    max-width: 400px; // Matches the width of the card
+    width: 100%; // Ensures they take up the full width of the container
+    margin: 0 auto; // Centers the title and description
+    padding: 0 1rem 1rem;
+  }
+}

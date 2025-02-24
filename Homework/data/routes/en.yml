@@ -1,0 +1,678 @@
+fields:
+  pageTitle: Welcome to Sitecore JSS
+
+placeholders:
+  jss-main:
+    - componentName: MenuComponent
+      fields:
+        menuItems:
+          - fields:
+              title:
+                value: Home
+              url:
+                value:
+                  href: '/'
+                  target: '_blank'
+              children:
+                - fields:
+                    title:
+                      value: Home Version 1
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Home Version 2
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+          - fields:
+              title:
+                value: Gallery
+              url:
+                value:
+                  href: '/'
+                  target: '_blank'
+              children:
+                - fields:
+                    title:
+                      value: Gallery
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Gallery Filtering
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Gallery Four Column
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+          - fields:
+              title:
+                value: Courses
+              url:
+                value:
+                  href: '/'
+                  target: '_blank'
+              children:
+                - fields:
+                    title:
+                      value: Courses Details
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+          - fields:
+              title:
+                value: Features
+              url:
+                value:
+                  href: '/'
+                  target: '_blank'
+              children:
+                - fields:
+                    title:
+                      value: Blog
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children:
+                      - fields:
+                          title:
+                            value: Blog
+                          url:
+                            value:
+                              href: '/'
+                              target: '_blank'
+                          children: []
+                      - fields:
+                          title:
+                            value: Blog Details
+                          url:
+                            value:
+                              href: '/'
+                              target: '_blank'
+                          children: []
+                - fields:
+                    title:
+                      value: Shop
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children:
+                      - fields:
+                          title:
+                            value: Shop
+                          url:
+                            value:
+                              href: '/'
+                              target: '_blank'
+                          children: []
+                      - fields:
+                          title:
+                            value: Shopping Cart
+                          url:
+                            value:
+                              href: '/'
+                              target: '_blank'
+                          children: []
+          - fields:
+              title:
+                value: Pages
+              url:
+                value:
+                  href: '/'
+                  target: '_blank'
+              children:
+                - fields:
+                    title:
+                      value: Team Details
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Courses Page
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Course Details Page
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Event page
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Blog
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Blog Details Page
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Blog Left Sidebar
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Blog No Sidebar
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Wishlist Page
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Checkout Page
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Shopping Cart Page
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Login Page
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: 404 Error
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+          - fields:
+              title:
+                value: Shop
+              url:
+                value:
+                  href: '/'
+                  target: '_blank'
+              children:
+                - fields:
+                    title:
+                      value: Single Product Page
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+          - fields:
+              title:
+                value: Contact
+              url:
+                value:
+                  href: '/'
+                  target: '_blank'
+              children: []
+    - componentName: MobileMenuComponent
+      fields:
+        # menuIcon:
+        #   src: /media/img/logo.webp
+        menuItems:
+          - fields:
+              title:
+                value: Home
+              url:
+                value:
+                  href: '/'
+                  target: '_blank'
+              children:
+                - fields:
+                    title:
+                      value: Home Version 1
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Home Version 2
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+          - fields:
+              title:
+                value: Gallery
+              url:
+                value:
+                  href: '/Article'
+                  target: '_blank'
+              children:
+                - fields:
+                    title:
+                      value: Gallery
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Gallery Filtering
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Gallery Four Column
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+          - fields:
+              title:
+                value: Team Details
+              url:
+                value:
+                  href: '/'
+                  target: '_blank'
+              children: []
+          - fields:
+              title:
+                value: Courses
+              url:
+                value:
+                  href: '/'
+                  target: '_blank'
+              children:
+                - fields:
+                    title:
+                      value: Courses Details
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+          - fields:
+              title:
+                value: Shop
+              url:
+                value:
+                  href: '/'
+                  target: '_blank'
+              children:
+                - fields:
+                    title:
+                      value: Single Product
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+          - fields:
+              title:
+                value: Event
+              url:
+                value:
+                  href: ''
+                  target: '_blank'
+              children:
+                - fields:
+                    title:
+                      value: Event Details
+                    url:
+                      value:
+                        href: ''
+                        target: '_blank'
+                    children: []
+          - fields:
+              title:
+                value: Blog
+              url:
+                value:
+                  href: '/'
+                  target: '_blank'
+              children:
+                - fields:
+                    title:
+                      value: Blog Details
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Blog Left Sidebar
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Blog No Sidebar
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+          - fields:
+              title:
+                value: Pages
+              url:
+                value:
+                  href: '/'
+                  target: '_blank'
+              children:
+                - fields:
+                    title:
+                      value: Team Details
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Courses Page
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Course Details Page
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Event page
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Blog
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Blog Details Page
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Blog Left Sidebar
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Blog No Sidebar
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Wishlist Page
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Checkout Page
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Shopping Cart Page
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: Login Page
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+                - fields:
+                    title:
+                      value: 404 Error
+                    url:
+                      value:
+                        href: '/'
+                        target: '_blank'
+                    children: []
+    - componentName: HeroComponent
+      fields:
+        heading: Hero heading text is at this place
+        description: |
+          This is a Sitecore course Lab3 homework Hero component place. Hard work will always pay off no matter how late. If you live up to these days, you can enjoy the results.
+          <br/>
+        ctaLink:
+          href: '#'
+          text: 'View cources'
+          target: '_blank'
+        backgroundImage:
+          value: /media/img/heroImage.webp
+      params:
+        hideHeading: false
+        buttonStyleClass: 'primary'
+    - componentName: AboutComponent
+      fields:
+        heading: 'Provide Best <span>Education Services</span> For You'
+        description: |
+          Education plays a crucial role in shaping an individual's future and societal progress. It empowers people with knowledge, skills, and critical thinking that are necessary for personal and professional success.
+          <br/>
+          Access to quality education fosters equality, reduces poverty, and creates opportunities for growth. However, disparities in educational access and resources still persist, requiring ongoing efforts to bridge these gaps for a more inclusive and prosperous society.
+        ctaLink:
+          href: '#'
+          text: 'Learn More'
+          target: '_blank'
+        image:
+          value: /media/img/aboutImage.webp
+        altText:
+          value: 'An illustration of education services'
+      params:
+        imageLeftAlignment: false
+    - componentName: TestimonialComponent
+      fields:
+        heading: 'What Our Clients Say'
+        description: |
+          All Perfect !! I have three sites with magento , this theme is the best !! Excellent support , advice theme installation package , sorry for English, are Italian but I had no problem !! Thank you !
+        author: 'John Doe'
+        image: /media/img/testimonial1.jpg
+        backgroundImage: /media/img/testimoniaBackground.png
+    - componentName: InfoComponent
+      fields:
+        infoBox1Count: 30
+        infoBox1Label: 'Teachers'
+        infoBox2Count: 30
+        infoBox2Label: 'Members'
+        infoBox3Count: 30
+        infoBox3Label: 'Courses'
+        infoBox4Count: 30
+        infoBox4Label: 'Countries'
+        backgroundImage: /media/img/infoComponentBackground.webp
+    - componentName: CoursesComponent
+      fields:
+        heading: 'Explore Our Courses'
+        description: |
+          Learn from the best instructors in the industry. Choose from a wide range of courses tailored for your career growth.
+        ctaLink:
+          value:
+            href: '/courses'
+            text: 'View All Courses'
+            target: '_self'
+      placeholders:
+        course-list:
+          - componentName: CourseCardComponent
+            fields:
+              title: 'Photoshop CC 2017'
+              description: 'Learn advanced Photoshop techniques to enhance your design skills.'
+              image: /media/img/course1.jpg
+              authorName: 'Derek Spafford'
+              authorImage: /media/img/teacher.png
+              studentCount: 59
+              likes: 19
+              rating: 4.5
+          - componentName: CourseCardComponent
+            fields:
+              title: 'Illustrator CC 2017'
+              description: 'There are many variations of sages of Lorem Ipsum available, but the mrity have suffered alteration in some orm.'
+              image: /media/img/course2.jpg
+              authorName: 'Jane Doe'
+              authorImage: /media/img/teacher.png
+              studentCount: 120
+              likes: 45
+              rating: 5
+          - componentName: CourseCardComponent
+            fields:
+              title: 'React for Beginners'
+              description: 'Master the fundamentals of React and build dynamic web applications.'
+              image: /media/img/course3.jpg
+              authorName: 'John Smith'
+              authorImage: /media/img/teacher.png
+              studentCount: 85
+              likes: 30
+              rating: 4.8
+    - componentName: SubscribeComponent
+      fields:
+        title: 'SUBSCRIBE'
+        subtitle: 'TO OUR NEWSLETTER'
+        placeholderText: 'Enter your mail here'
+        buttonText: 'Subscribe'
+        formAction: 'Post'
+    - componentName: ExampleComponent
+      fields:
+        heading: Heading
+        description: Test dscr
+    # - componentName: ColumnSectionComponent
+    # - componentName: ColumnSectionOneThirdComponent
+    - componentName: ColumnSectionComponent
+      placeholders:
+        column1:
+          - componentName: FunFactorComponent
+            fields:
+              funCounter: 24
+              funText: 'Teachers'
+        column2:
+          - componentName: FunFactorComponent
+            fields:
+              funCounter: 60
+              funText: 'Students'
+        column3:
+          - componentName: FunFactorComponent
+            fields:
+              funCounter: 30
+              funText: 'Courses'
+        column4:
+          - componentName: FunFactorComponent
+            fields:
+              funCounter: 50
+              funText: 'Countries'
+    - componentName: ColumnSectionOneThirdComponent
+      placeholders:
+        column1:
+          - componentName: FunFactorComponent
+            fields:
+              funCounter: 24
+              funText: 'Teachers'
+        column2:
+          - componentName: FunFactorComponent
+            fields:
+              funCounter: 60
+              funText: 'Students'
+        column3:
+          - componentName: FunFactorComponent
+            fields:
+              funCounter: 30
+              funText: 'Courses'
