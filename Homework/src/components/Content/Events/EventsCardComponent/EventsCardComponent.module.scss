@@ -1,0 +1,97 @@
+.eventCard {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  
+    &:hover {
+      transform: scale(1.03);
+    }
+  
+    &:hover .eventButton {
+      background-color: orange;
+      color: white !important;
+    }
+  a {
+    text-decoration: none;
+  }
+    .imageWrapper {
+      position: relative;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  
+    .eventDate {
+        position: absolute;
+        bottom: -24px; // Adjusted to match original positioning
+        left: 0;
+        right: 0;
+        width: 170px; // Ensuring it matches original width
+        height: 50px;
+        background: #1F3971; // Original dark blue color
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        line-height: 18px;
+        padding-top: 16px;
+        margin: 0 auto;
+        border-radius: 50px;
+      }
+      
+  
+    .contentWrapper {
+      padding: 20px;
+  
+      .title {
+        color: #777;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 10px;
+        text-decoration: none;
+      }
+  
+      .meta {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+        color: #777;
+        margin-bottom: 15px;
+      }
+  
+      .description {
+        font-size: 1rem;
+        color: #333;
+        margin-bottom: 15px;
+      }
+    }
+  
+    .eventButton {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 12px 24px;
+      background-color: #1f3971;
+      color: white !important;
+      text-decoration: none !important;
+      font-size: 18px;
+      font-weight: 600;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      margin-bottom: 2rem;
+    }
+  
+    .eventButton:hover {
+      background-color: orange;
+      color: white !important;
+    }
+  }
+  

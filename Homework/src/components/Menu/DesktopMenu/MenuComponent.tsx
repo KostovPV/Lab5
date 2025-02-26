@@ -35,27 +35,54 @@ const MenuComponent = ({ fields }: MenuProps): JSX.Element => {
       ? fields.menuItems
       : fields?.menuItems?.value || [];
 
-  const renderMenuItems = (items: MenuItem[]): JSX.Element[] => {
-    return items.map((item, index) => {
-      // const key = item.id || `${item.name}-${index}`;
-      const children = extractChildren(item.fields.children);
-      const hasChildren = children.length > 0;
-
-      return (
-        <li key={`${item.id}-${item.fields.url?.value?.href}`} className={styles.menuItem}>
-          <a
-            href={item.fields.url?.value?.href || '#'}
-            className={styles.menuLink}
-            target={item.fields.url?.value?.target || '_self'}
-          >
-            {item.fields.title?.value || item.displayName || item.name || 'Untitled'}
-          </a>
-          {hasChildren && <ul className={styles.subMenu}>{renderMenuItems(children)}</ul>}
-        </li>
-      );
-    });
-  };
-
+      // const renderMenuItems = (items: MenuItem[], depth = 0): JSX.Element[] => {
+      //   return items.map((item) => {
+      //     const children = extractChildren(item.fields.children);
+      //     const hasChildren = children.length > 0;
+      
+      //     return (
+      //       <li key={`${item.id}-'desktop'`} className={styles.menuItem}>
+      //         <a
+      //           href={item.fields.url?.value?.href || '#'}
+      //           className={styles.menuLink}
+      //           target={item.fields.url?.value?.target || '_self'}
+      //         >
+      //           {item.fields.title?.value || item.displayName || item.name || 'Untitled'}
+      //         </a>
+      //         {hasChildren && (
+      //           <ul className={depth === 0 ? styles.subMenu : styles.insideMenu}>
+      //             {renderMenuItems(children, depth + 1)}
+      //           </ul>
+      //         )}
+      //       </li>
+      //     );
+      //   });
+      // };
+      
+      const renderMenuItems = (items: MenuItem[], depth = 0): JSX.Element[] => {
+        return items.map((item, index) => {
+          const children = extractChildren(item.fields.children);
+          const hasChildren = children.length > 0;
+      
+          return (
+            <li key={`${item.id || 'menu-item'}-${depth}-${index}`} className={styles.menuItem}>
+              <a
+                href={item.fields.url?.value?.href || '#'}
+                className={styles.menuLink}
+                target={item.fields.url?.value?.target || '_self'}
+              >
+                {item.fields.title?.value || item.displayName || item.name || 'Untitled'}
+              </a>
+              {hasChildren && (
+                <ul className={depth === 0 ? styles.subMenu : styles.insideMenu}>
+                  {renderMenuItems(children, depth + 1)}
+                </ul>
+              )}
+            </li>
+          );
+        });
+      };
+      
   return (
     <nav className={styles.navBar}>
       <div className={styles.logoSection}>

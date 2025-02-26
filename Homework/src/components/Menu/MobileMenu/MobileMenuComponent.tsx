@@ -24,7 +24,7 @@ interface MobileMenuProps extends ComponentProps {
 
 const MobileMenuComponent = ({ fields }: MobileMenuProps): JSX.Element => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeSubmenuId, setActiveSubmenuId] = useState<string | null>(null);
+  const [activeSubmenus, setActiveSubmenus] = useState<{ [key: string]: boolean }>({});
 
   const toggleMenu = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
@@ -32,36 +32,23 @@ const MobileMenuComponent = ({ fields }: MobileMenuProps): JSX.Element => {
   };
 
   const toggleSubmenu = (submenuId: string) => {
-    setActiveSubmenuId((prevId) => (prevId === submenuId ? null : submenuId));
+    setActiveSubmenus((prev) => ({
+      ...prev,
+      [submenuId]: !prev[submenuId], // Toggle specific submenu
+    }));
   };
 
-  const extractChildren = (
-    children?: { value?: MenuItem[] } | MenuItem[]
-  ): MenuItem[] => {
+  const extractChildren = (children?: { value?: MenuItem[] } | MenuItem[]): MenuItem[] => {
     if (!children) return [];
     return Array.isArray(children) ? children : children.value || [];
   };
 
   const menuItems: MenuItem[] =
     fields?.items && Array.isArray(fields.items)
-      ? fields.items.map((item) => ({
-          ...item,
-          fields: {
-            ...item.fields,
-            children: extractChildren(item.fields.children),
-          },
-        }))
+      ? fields.items
       : Array.isArray(fields?.menuItems)
       ? fields.menuItems
-      : fields?.menuItems?.value && Array.isArray(fields.menuItems.value)
-      ? fields.menuItems.value.map((item) => ({
-          ...item,
-          fields: {
-            ...item.fields,
-            children: extractChildren(item.fields.children),
-          },
-        }))
-      : [];
+      : fields?.menuItems?.value || [];
 
   const renderMenuItems = (items: MenuItem[] = [], level = 0): JSX.Element[] => {
     return items.map((item) => {
@@ -72,7 +59,7 @@ const MobileMenuComponent = ({ fields }: MobileMenuProps): JSX.Element => {
       const urlTarget = urlField?.value?.target || '_self';
 
       const childrenItems = extractChildren(fields.children);
-      const isSubmenuActive = activeSubmenuId === item.id;
+      const isSubmenuActive = !!activeSubmenus[item.id];
 
       return (
         <li key={item.id} className={styles.menuItem}>
@@ -105,10 +92,7 @@ const MobileMenuComponent = ({ fields }: MobileMenuProps): JSX.Element => {
             )}
           </div>
           {childrenItems.length > 0 && (
-            <ul
-              className={styles.subMenu}
-              style={{ display: isSubmenuActive ? 'block' : 'none' }}
-            >
+            <ul className={styles.subMenu} style={{ display: isSubmenuActive ? 'block' : 'none' }}>
               {renderMenuItems(childrenItems, level + 1)}
             </ul>
           )}

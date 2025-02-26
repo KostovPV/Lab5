@@ -1,0 +1,86 @@
+.newsCard {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  &:hover .newsButton {
+    background-color: orange;
+    color: white !important;
+  }
+
+  .imageWrapper {
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .contentWrapper {
+    padding: 20px;
+
+    .title {
+      color: #777;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .description {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 15px;
+    }
+  }
+
+  .newsButton {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 12px 24px;
+    background-color: #1f3971;
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 2rem;
+  }
+  
+  .newsButton a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+  
+  .newsButton:hover {
+    background-color: orange;
+    color: white !important;
+  }
+  
+  .newsButton:hover a {
+    color: white !important;
+  }
+  
+  .newsButton > a {
+    background-color: inherit !important;
+    color: inherit !important;
+  }
+  
+}

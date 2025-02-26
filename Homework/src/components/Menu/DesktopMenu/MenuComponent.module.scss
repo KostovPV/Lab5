@@ -57,7 +57,7 @@
   list-style: none;
   white-space: nowrap;
   z-index: 100;
-  min-width: 200px; 
+  min-width: 100px; 
 }
 
 /* Show first-level submenu */
@@ -82,7 +82,7 @@
   white-space: nowrap;
   z-index: 101;
   min-width: 200px;
-  margin-left: 5px; 
+  margin-left: 20px; 
 }
 
 /* Show second-level submenu */
@@ -94,7 +94,7 @@
   display: none;
   position: absolute;
   top: 0;
-  left: 100%; 
+  left: 105%; 
   background: #fff;
   padding: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);

@@ -40,7 +40,7 @@ placeholders:
               children:
                 - fields:
                     title:
-                      value: Gallery
+                      value: Galleryes
                     url:
                       value:
                         href: '/'
@@ -120,7 +120,7 @@ placeholders:
                     children:
                       - fields:
                           title:
-                            value: Shop
+                            value: Shops
                           url:
                             value:
                               href: '/'
@@ -563,25 +563,6 @@ placeholders:
           value: 'An illustration of education services'
       params:
         imageLeftAlignment: false
-    - componentName: TestimonialComponent
-      fields:
-        heading: 'What Our Clients Say'
-        description: |
-          All Perfect !! I have three sites with magento , this theme is the best !! Excellent support , advice theme installation package , sorry for English, are Italian but I had no problem !! Thank you !
-        author: 'John Doe'
-        image: /media/img/testimonial1.jpg
-        backgroundImage: /media/img/testimoniaBackground.png
-    - componentName: InfoComponent
-      fields:
-        infoBox1Count: 30
-        infoBox1Label: 'Teachers'
-        infoBox2Count: 30
-        infoBox2Label: 'Members'
-        infoBox3Count: 30
-        infoBox3Label: 'Courses'
-        infoBox4Count: 30
-        infoBox4Label: 'Countries'
-        backgroundImage: /media/img/infoComponentBackground.webp
     - componentName: CoursesComponent
       fields:
         heading: 'Explore Our Courses'
@@ -624,6 +605,70 @@ placeholders:
               studentCount: 85
               likes: 30
               rating: 4.8
+    - componentName: InfoComponent
+      fields:
+        infoBox1Count: 30
+        infoBox1Label: 'Teachers'
+        infoBox2Count: 30
+        infoBox2Label: 'Members'
+        infoBox3Count: 30
+        infoBox3Label: 'Courses'
+        infoBox4Count: 30
+        infoBox4Label: 'Countries'
+        backgroundImage: /media/img/infoComponentBackground.webp
+    - componentName: TestimonialComponent
+      fields:
+        heading: 'What Our Clients Say'
+        description: |
+          All Perfect !! I have three sites with magento , this theme is the best !! Excellent support , advice theme installation package , sorry for English, are Italian but I had no problem !! Thank you !
+        author: 'John Doe'
+        image: /media/img/testimonial1.jpg
+        backgroundImage: /media/img/testimoniaBackground.png
+    - componentName: NewsComponent
+      fields:
+        heading: 'Latest News'
+        description: 'There are many variations of passages'
+      placeholders:
+        news-list:
+          - componentName: NewsCardComponent
+            fields:
+              title: 'Learn English with Ease'
+              description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.'
+              image: /media/img/news1.webp
+              date: '25 Jun 2050'
+              views: 59
+              comments: 19
+              readMoreLink:
+                value:
+                  href: /blog-details
+                  text: 'Read More'
+                  target: '_self'
+          - componentName: NewsCardComponent
+            fields:
+              title: 'Advanced Photoshop Techniques'
+              description: 'Learn advanced Photoshop techniques to enhance your design skills.'
+              image: /media/img/news2.jpg
+              date: '26 Jun 2050'
+              views: 75
+              comments: 23
+              readMoreLink:
+                value:
+                  href: /blog-details
+                  text: 'Read More'
+                  target: '_self'
+          - componentName: NewsCardComponent
+            fields:
+              title: 'Mastering Illustrator CC'
+              description: 'Master the fundamentals of Illustrator and create stunning vector graphics.'
+              image: /media/img/news3.jpg
+              date: '27 Jun 2050'
+              views: 88
+              comments: 30
+              readMoreLink:
+                value:
+                  href: /blog-details
+                  text: 'Read More'
+                  target: '_self'
     - componentName: SubscribeComponent
       fields:
         title: 'SUBSCRIBE'
@@ -631,48 +676,94 @@ placeholders:
         placeholderText: 'Enter your mail here'
         buttonText: 'Subscribe'
         formAction: 'Post'
-    - componentName: ExampleComponent
+    - componentName: EventsComponent
       fields:
-        heading: Heading
-        description: Test dscr
+        heading: 'Upcoming Events'
+        description: 'Explore the latest educational events happening near you.'
+      placeholders:
+        events-list:
+          - componentName: EventsCardComponent
+            fields:
+              title: 'Learn English in Ease'
+              description: 'Join us for an immersive English learning experience with expert teachers.'
+              image: /media/img/event1.jpg
+              date: '15 Jun 2050'
+              location: 'Dhaka, Bangladesh'
+              time: '4:00 pm - 8:00 pm'
+              learnMoreLink:
+                value:
+                  href: /event-details
+                  text: 'Learn Now'
+                  target: '_self'
+          - componentName: EventsCardComponent
+            fields:
+              title: 'Photography Workshop'
+              description: 'Enhance your photography skills with our hands-on workshop.'
+              image: /media/img/news2.jpg
+              date: '20 Apr 2050'
+              location: 'Jessore, Bangladesh'
+              time: '10:00 am - 3:00 pm'
+              learnMoreLink:
+                value:
+                  href: /event-details
+                  text: 'Join Now'
+                  target: '_self'
+          - componentName: EventsCardComponent
+            fields:
+              title: 'Mastering Web Development'
+              description: 'A deep dive into modern web development techniques and best practices.'
+              image: /media/img/event1.jpg
+              date: '06 Dec 2050'
+              location: 'Dhaka, Bangladesh'
+              time: '9:00 am - 5:00 pm'
+              learnMoreLink:
+                value:
+                  href: /event-details
+                  text: 'Register Now'
+                  target: '_self'
+    # - componentName: ExampleComponent
+    #   fields:
+    #     heading: Heading
+    #     description: Test dscr
     # - componentName: ColumnSectionComponent
     # - componentName: ColumnSectionOneThirdComponent
-    - componentName: ColumnSectionComponent
-      placeholders:
-        column1:
-          - componentName: FunFactorComponent
-            fields:
-              funCounter: 24
-              funText: 'Teachers'
-        column2:
-          - componentName: FunFactorComponent
-            fields:
-              funCounter: 60
-              funText: 'Students'
-        column3:
-          - componentName: FunFactorComponent
-            fields:
-              funCounter: 30
-              funText: 'Courses'
-        column4:
-          - componentName: FunFactorComponent
-            fields:
-              funCounter: 50
-              funText: 'Countries'
-    - componentName: ColumnSectionOneThirdComponent
-      placeholders:
-        column1:
-          - componentName: FunFactorComponent
-            fields:
-              funCounter: 24
-              funText: 'Teachers'
-        column2:
-          - componentName: FunFactorComponent
-            fields:
-              funCounter: 60
-              funText: 'Students'
-        column3:
-          - componentName: FunFactorComponent
-            fields:
-              funCounter: 30
-              funText: 'Courses'
+    # - componentName: ColumnSectionComponent
+    #   placeholders:
+    #     column1:
+    #       - componentName: FunFactorComponent
+    #         fields:
+    #           funCounter: 24
+    #           funText: 'Teachers'
+    #     column2:
+    #       - componentName: FunFactorComponent
+    #         fields:
+    #           funCounter: 60
+    #           funText: 'Students'
+    #     column3:
+    #       - componentName: FunFactorComponent
+    #         fields:
+    #           funCounter: 30
+    #           funText: 'Courses'
+    #     column4:
+    #       - componentName: FunFactorComponent
+    #         fields:
+    #           funCounter: 50
+    #           funText: 'Countries'
+    # - componentName: ColumnSectionOneThirdComponent
+    #   placeholders:
+    #     column1:
+    #       - componentName: FunFactorComponent
+    #         fields:
+    #           funCounter: 24
+    #           funText: 'Teachers'
+    #     column2:
+    #       - componentName: FunFactorComponent
+    #         fields:
+    #           funCounter: 60
+    #           funText: 'Students'
+    #     column3:
+    #       - componentName: FunFactorComponent
+    #         fields:
+    #           funCounter: 30
+    #           funText: 'Courses'
+    
