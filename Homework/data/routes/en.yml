@@ -272,8 +272,8 @@ placeholders:
               children: []
     - componentName: MobileMenuComponent
       fields:
-        # menuIcon:
-        #   src: /media/img/logo.webp
+        menuIcon:
+          src: /media/img/logo.webp
         menuItems:
           - fields:
               title:
@@ -721,6 +721,36 @@ placeholders:
                   href: /event-details
                   text: 'Register Now'
                   target: '_self'
+    - componentName: LibraryComponent
+      fields:
+        heading: 'Online Library'
+        description: 'There are many variations of passages'
+      placeholders:
+        library-items:
+          - componentName: LibraryItemComponent
+            fields:
+              title: 'Clock'
+              price: 115.00
+              image: /media/img/library1.jpg
+              saleLabel: 'Sale!'
+          - componentName: LibraryItemComponent
+            fields:
+              title: 'Eleifend quam'
+              price: 115.00
+              image: /media/img/library2.jpg
+              saleLabel: 'Sale!'
+          - componentName: LibraryItemComponent
+            fields:
+              title: 'Pen quam'
+              price: 115.00
+              image: /media/img/library3.jpg
+              saleLabel: 'Sale!'
+          - componentName: LibraryItemComponent
+            fields:
+              title: 'Note Khata'
+              price: 115.00
+              image: /media/img/library4.jpg
+              saleLabel: 'Sale!'
     # - componentName: ExampleComponent
     #   fields:
     #     heading: Heading

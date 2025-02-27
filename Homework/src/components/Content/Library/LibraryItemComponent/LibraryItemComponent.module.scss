@@ -1,0 +1,63 @@
+.libraryItem {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+  
+    &:hover {
+      transform: scale(1.03);
+    }
+  
+    .libraryItemWrapper {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+  
+    .itemImage {
+      position: relative;
+      overflow: hidden;
+      height: 180px;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+  
+      .saleLabel {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #007bff;
+        color: #fff;
+        padding: 5px 10px;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 4px;
+      }
+    }
+  
+    .itemContent {
+      padding: 15px;
+      h4 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+  
+      p {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+      }
+    }
+  }
+  

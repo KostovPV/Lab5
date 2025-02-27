@@ -62,7 +62,7 @@ const MobileMenuComponent = ({ fields }: MobileMenuProps): JSX.Element => {
       const isSubmenuActive = !!activeSubmenus[item.id];
 
       return (
-        <li key={item.id} className={styles.menuItem}>
+        <li key={titleText + `mobile`} className={styles.menuItem}>
           <div className={styles.menuItemWrapper}>
             <a
               href={urlValue}
