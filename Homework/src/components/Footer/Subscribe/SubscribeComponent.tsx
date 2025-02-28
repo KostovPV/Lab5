@@ -15,7 +15,7 @@ type SubscribeComponentProps = ComponentProps & {
 const SubscribeComponent = ({ fields }: SubscribeComponentProps): JSX.Element => {
   return (
     <div className={styles.subscribeSection}>
-      <div className={styles.additionalWrapper}>
+      <div className={styles.container}>
         <div className={styles.subscribeInfo}>
           <div className={styles.subscribeInfoWrapper}>
             <h3>

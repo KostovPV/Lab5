@@ -7,12 +7,18 @@
   border-bottom: 1px solid #4b5b7d;
   padding-top: 45px;
   padding-bottom: 40px;
-  text-align: center;
+  text-align: left;
+  justify-content: center;
+  // padding: 60px 0;
 }
-.additionalWrapper {
-  width: 100%;
+
+.container {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 70px;
+  margin: 0  auto;
+  flex-wrap: wrap;
 }
 
 .subscribeInfo {
@@ -20,6 +26,8 @@
   flex-direction: column;
   margin-bottom: 20px;
   width: 50%;
+  align-items: center;
+  
 
   h3 {
     font-size: 21px;
@@ -72,11 +80,89 @@
     }
   }
 }
+@media (max-width: 1700px) {
+  .container {
+    padding-left: 260px;
+  }
+  .subscribeInfo{
+    align-items: flex-start;
+  }
+  }
+@media (max-width: 1600px) {
+.container {
+  padding-left: 230px;
+}
+.subscribeInfo{
+  align-items: flex-start;
+}
+}
+@media (max-width: 1500px) {
+  .container {
+    padding-left: 200px;
+  }
+  .subscribeInfo{
+    align-items: flex-start;
+  }
+  }
+
+@media (max-width: 1500px) {
+  .container {
+    padding-left: 180px;
+  }
+  .subscribeInfo{
+    align-items: flex-start;
+  }
+  }
+  @media (max-width: 1400px) {
+    .container {
+      padding-left: 100px;
+    }
+    .subscribeInfo{
+      align-items: flex-start;
+    }
+    }
+
+  @media (max-width: 1300px) {
+    .container {
+      padding-left: 80px;
+    }
+    .subscribeInfo{
+      align-items: flex-start;
+    }
+    }
+
+    @media (max-width: 1350px) {
+      .container {
+        padding-left: 70px;
+      }
+      .subscribeInfo{
+        align-items: flex-start;
+      }
+      }
+      @media (max-width: 1250px) {
+        .container {
+          padding-left: 60px;
+        }
+        .subscribeInfo{
+          align-items: flex-start;
+        }
+        }
+        @media (max-width: 1040px) {
+          .container {
+            padding-left: 90px;
+          }
+          .subscribeInfo{
+            align-items: flex-start;
+          }
+          }
 
 @media (max-width: 991px) {
+  .container {
+    padding-left: 90px;
+  }
   .subscribeInfoWrapper {
-    width: 50%;
-    margin-left: 2rem;
+    width: 70%;
+    margin-left: 0;
   }
 
   .subscribeForm {
@@ -87,10 +173,13 @@
 }
 
 @media (max-width: 767px) {
+  .container{
+    width: 90%;
+  }
   .subscribeSection {
     flex-direction: column;
-    text-align: center;
-    justify-items: left;
+    text-align: left;
+    justify-items: center;
     align-items: center;
   }
 
@@ -104,6 +193,6 @@
   }
   .subscribeForm {
     width: 70%;
-    margin-right: 2rem;
+    margin-right:0 auto;
   }
 }
