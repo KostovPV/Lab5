@@ -1,6 +1,7 @@
 import { ImageField, Field, Text } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import styles from './LibraryItemComponent.module.scss';
+import React, { useState } from 'react';
 
 type LibraryItemProps = ComponentProps & {
   fields: {
@@ -12,6 +13,9 @@ type LibraryItemProps = ComponentProps & {
 };
 
 const LibraryItemComponent = ({ fields }: LibraryItemProps): JSX.Element => {
+  const [isPriceHovered, setIsPriceHovered] = useState(false);
+  const [isTitleHovered, setIsTitleHovered] = useState(false);
+
   const itemImage =
     typeof fields.image.value === 'string' ? fields.image.value : fields.image.value?.src;
 
@@ -21,15 +25,32 @@ const LibraryItemComponent = ({ fields }: LibraryItemProps): JSX.Element => {
         {/* Item Image */}
         <div className={styles.itemImage}>
           <img src={itemImage} alt={fields.title?.value} />
-          {fields.saleLabel?.value && <span className={styles.saleLabel}>{fields.saleLabel.value}</span>}
+          {fields.saleLabel?.value && <span className={styles.onsale}>{fields.saleLabel.value}</span>}
         </div>
 
         {/* Item Content */}
         <div className={styles.itemContent}>
+          {/* Clickable Title with Hover Effect */}
           <h4>
-            <Text tag="span" field={fields.title} />
+            <a
+              href="/details"
+              className={`${styles.titleText} ${isTitleHovered ? styles.hovered : ''}`}
+              onMouseEnter={() => setIsTitleHovered(true)}
+              onMouseLeave={() => setIsTitleHovered(false)}
+            >
+              <Text field={fields.title} />
+            </a>
           </h4>
-          <p>${fields.price?.value.toFixed(2)}</p>
+
+          {/* Price Button with Hover Effect */}
+          <a
+            href="/"
+            className={`${styles.priceText} ${isPriceHovered ? styles.hovered : ''}`}
+            onMouseEnter={() => setIsPriceHovered(true)}
+            onMouseLeave={() => setIsPriceHovered(false)}
+          >
+            {isPriceHovered ? 'ADD TO CART' : <Text field={fields.price} />}
+          </a>
         </div>
       </div>
     </div>

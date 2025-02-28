@@ -4,7 +4,7 @@ import { ComponentProps } from 'lib/component-props';
 import styles from './MobileMenuComponent.module.scss';
 
 interface MenuItem {
-  id: string;
+  id?: string;
   name?: string;
   displayName?: string;
   fields: {
@@ -32,10 +32,10 @@ const MobileMenuComponent = ({ fields }: MobileMenuProps): JSX.Element => {
   };
 
   const toggleSubmenu = (submenuId: string) => {
-    setActiveSubmenus((prev) => ({
-      ...prev,
-      [submenuId]: !prev[submenuId], // Toggle specific submenu
-    }));
+    setActiveSubmenus((prev) => {
+      const newState = { ...prev, [submenuId]: !prev[submenuId] };
+      return newState;
+    });
   };
 
   const extractChildren = (children?: { value?: MenuItem[] } | MenuItem[]): MenuItem[] => {
@@ -51,7 +51,7 @@ const MobileMenuComponent = ({ fields }: MobileMenuProps): JSX.Element => {
       : fields?.menuItems?.value || [];
 
   const renderMenuItems = (items: MenuItem[] = [], level = 0): JSX.Element[] => {
-    return items.map((item) => {
+    return items.map((item, index) => {
       const { fields = {} } = item;
       const titleText = fields.title?.value || item.displayName || item.name || 'Untitled';
       const urlField = fields.url;
@@ -59,10 +59,11 @@ const MobileMenuComponent = ({ fields }: MobileMenuProps): JSX.Element => {
       const urlTarget = urlField?.value?.target || '_self';
 
       const childrenItems = extractChildren(fields.children);
-      const isSubmenuActive = !!activeSubmenus[item.id];
+      const submenuId = `${titleText}-${index}`;
+      const isSubmenuActive = activeSubmenus[submenuId] || false;
 
       return (
-        <li key={titleText + `mobile`} className={styles.menuItem}>
+        <li key={submenuId} className={styles.menuItem}>
           <div className={styles.menuItemWrapper}>
             <a
               href={urlValue}
@@ -72,23 +73,22 @@ const MobileMenuComponent = ({ fields }: MobileMenuProps): JSX.Element => {
               onClick={(e) => {
                 if (childrenItems.length > 0) {
                   e.preventDefault();
-                  toggleSubmenu(item.id);
+                  toggleSubmenu(submenuId);
                 }
               }}
             >
               {titleText}
             </a>
             {childrenItems.length > 0 && (
-              <a
-                href="#"
+              <button
                 className={styles.meanExpand}
                 onClick={(e) => {
                   e.preventDefault();
-                  toggleSubmenu(item.id);
+                  toggleSubmenu(submenuId);
                 }}
               >
                 {isSubmenuActive ? '−' : '+'}
-              </a>
+              </button>
             )}
           </div>
           {childrenItems.length > 0 && (

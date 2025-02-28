@@ -272,8 +272,8 @@ placeholders:
               children: []
     - componentName: MobileMenuComponent
       fields:
-        menuIcon:
-          src: /media/img/logo.webp
+        # menuIcon:
+        #   src: /media/img/logo.webp
         menuItems:
           - fields:
               title:
@@ -645,8 +645,8 @@ placeholders:
                   target: '_self'
           - componentName: NewsCardComponent
             fields:
-              title: 'Advanced Photoshop Techniques'
-              description: 'Learn advanced Photoshop techniques to enhance your design skills.'
+              title: 'Advanced Photoshop'
+              description: 'Learn advanced Photoshop techniques to enhance your design skills. Join the course now'
               image: /media/img/news2.jpg
               date: '26 Jun 2050'
               views: 75
@@ -659,7 +659,7 @@ placeholders:
           - componentName: NewsCardComponent
             fields:
               title: 'Mastering Illustrator CC'
-              description: 'Master the fundamentals of Illustrator and create stunning vector graphics.'
+              description: 'Master the fundamentals of Illustrator and create stunning vector graphics. Become a pro now'
               image: /media/img/news3.jpg
               date: '27 Jun 2050'
               views: 88
@@ -669,13 +669,6 @@ placeholders:
                   href: /blog-details
                   text: 'Read More'
                   target: '_self'
-    - componentName: SubscribeComponent
-      fields:
-        title: 'SUBSCRIBE'
-        subtitle: 'TO OUR NEWSLETTER'
-        placeholderText: 'Enter your mail here'
-        buttonText: 'Subscribe'
-        formAction: 'Post'
     - componentName: EventsComponent
       fields:
         heading: 'Upcoming Events'
@@ -796,4 +789,55 @@ placeholders:
     #         fields:
     #           funCounter: 30
     #           funText: 'Courses'
-    
+    - componentName: SubscribeComponent
+      fields:
+        title: 'SUBSCRIBE'
+        subtitle: 'TO OUR NEWSLETTER'
+        placeholderText: 'Enter your mail here'
+        buttonText: 'Subscribe'
+        formAction: 'Post'
+    - componentName: CopyriteComponent
+      fields:
+        copyrightText: 'Copyright © Educat 2022. All rights reserved.'
+        createdByText: 'Created by'
+        createdByLink: 'Edubuzz'
+        privacyTermsText: 'Privacy Policy , Terms & Conditions'
+    - componentName: FooterMainInfoComponent
+      displayName: 'Footer Main Info Component'
+      placeholders:
+        footer-single-block-1:
+        - componentName: FooterSingleBlockComponent
+          fields:
+            image: /media/img/footerLogo.png
+          placeholders:
+            footerSingleBlockData:
+              - componentName: FooterSingleBlockData1Component
+                fields:
+                  description: "There are many variations of Lorem Ipsum..."
+                  socialIcon1: "zmdi-facebook"
+                  socialIcon2: "zmdi-rss"
+                  socialIcon3: "zmdi-google-plus"
+                  socialIcon4: "zmdi-pinterest"
+                  socialIcon5: "zmdi-instagram"
+        # footer-single-block-2:
+        #   - componentName: FooterSingleBlockComponent
+        #     fields:
+        #       title: 'Get in Touch'
+        #     placeholders:
+        #       footerSingleBlockData:
+        #         - componentName: FooterSingleBlockData2Component
+        # footer-single-block-3:
+        #   - componentName: FooterSingleBlockComponent
+        #     fields:
+        #       title: 'Useful Links'
+        #     placeholders:
+        #       footerSingleBlockData:
+        #         - componentName: FooterSingleBlockData3Component
+        # footer-single-block-4:
+        #   - componentName: FooterSingleBlockComponent
+        #     fields:
+        #       title: 'Instagram'
+        #     placeholders:
+        #       footerSingleBlockData:
+        #         - componentName: FooterSingleBlockData4Component
+

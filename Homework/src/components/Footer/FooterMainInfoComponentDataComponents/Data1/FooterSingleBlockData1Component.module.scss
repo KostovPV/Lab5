@@ -1,0 +1,33 @@
+.footerData {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .socialIcons {
+    display: flex;
+    gap: 10px; // Adds spacing between icons
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+  
+  .socialIcons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; // Adjust width
+    height: 40px; // Adjust height
+    border-radius: 50%; // Make icons circular (optional)
+    background-color: rgba(255, 255, 255, 0.1); // Light background (adjust as needed)
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .socialIcons a:hover {
+    background-color: rgba(255, 255, 255, 0.3); // Hover effect
+  }
+  
+  .socialIcons i {
+    font-size: 24px; // ✅ Ensure the icon has proper size
+    color: white; // Change as needed
+  }
+  

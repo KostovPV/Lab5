@@ -34,7 +34,7 @@
       .saleLabel {
         position: absolute;
         top: 10px;
-        right: 10px;
+        right: 100px;
         background-color: #007bff;
         color: #fff;
         padding: 5px 10px;
@@ -47,17 +47,59 @@
   
     .itemContent {
       padding: 15px;
+      
       h4 {
         font-size: 18px;
         font-weight: 600;
         margin-bottom: 5px;
+    
+        .titleText {
+          text-decoration: none;
+          color: #333;
+          transition: color 0.3s ease-in-out;
+          cursor: pointer;
+          
+          &.hovered {
+            color: orange;
+          }
+        }
       }
-  
-      p {
+    
+      .priceText {
         font-size: 16px;
         font-weight: bold;
         color: #333;
+        text-decoration: none;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+    
+        &.hovered {
+          color: orange;
+        }
       }
     }
+    
+    
+
+    .onsale {
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 100px;
+      height: 100px;
+      background: #1f3971;
+      color: var(--bs-white);
+      font-size: 14px;
+      font-weight: bold;
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 10px;
+      justify-content: center;
+      transform: rotate(45deg);
+      text-transform: uppercase;
+      z-index: 2;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    
   }
   
