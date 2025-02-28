@@ -10,7 +10,7 @@ const FooterMainInfoComponent = (props: FooterMainInfoComponentProps): JSX.Eleme
       <div className={styles.column}>
         <Placeholder name="footer-single-block-1" rendering={props.rendering} />
       </div>
-      {/* <div className={styles.column}>
+      <div className={styles.column}>
         <Placeholder name="footer-single-block-2" rendering={props.rendering} />
       </div>
       <div className={styles.column}>
@@ -18,7 +18,7 @@ const FooterMainInfoComponent = (props: FooterMainInfoComponentProps): JSX.Eleme
       </div>
       <div className={styles.column}>
         <Placeholder name="footer-single-block-4" rendering={props.rendering} />
-      </div> */}
+      </div>
     </div>
   </div>
 );

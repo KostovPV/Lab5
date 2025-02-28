@@ -796,12 +796,6 @@ placeholders:
         placeholderText: 'Enter your mail here'
         buttonText: 'Subscribe'
         formAction: 'Post'
-    - componentName: CopyriteComponent
-      fields:
-        copyrightText: 'Copyright © Educat 2022. All rights reserved.'
-        createdByText: 'Created by'
-        createdByLink: 'Edubuzz'
-        privacyTermsText: 'Privacy Policy , Terms & Conditions'
     - componentName: FooterMainInfoComponent
       displayName: 'Footer Main Info Component'
       placeholders:
@@ -813,31 +807,59 @@ placeholders:
             footerSingleBlockData:
               - componentName: FooterSingleBlockData1Component
                 fields:
-                  description: "There are many variations of Lorem Ipsum..."
+                  description: "There are many variations of passg of Lorem Ipsum available, but thmajority have suffered altem,"
                   socialIcon1: "zmdi-facebook"
                   socialIcon2: "zmdi-rss"
                   socialIcon3: "zmdi-google-plus"
                   socialIcon4: "zmdi-pinterest"
                   socialIcon5: "zmdi-instagram"
-        # footer-single-block-2:
-        #   - componentName: FooterSingleBlockComponent
-        #     fields:
-        #       title: 'Get in Touch'
-        #     placeholders:
-        #       footerSingleBlockData:
-        #         - componentName: FooterSingleBlockData2Component
-        # footer-single-block-3:
-        #   - componentName: FooterSingleBlockComponent
-        #     fields:
-        #       title: 'Useful Links'
-        #     placeholders:
-        #       footerSingleBlockData:
-        #         - componentName: FooterSingleBlockData3Component
-        # footer-single-block-4:
-        #   - componentName: FooterSingleBlockComponent
-        #     fields:
-        #       title: 'Instagram'
-        #     placeholders:
-        #       footerSingleBlockData:
-        #         - componentName: FooterSingleBlockData4Component
-
+        footer-single-block-2:
+        - componentName: FooterSingleBlockComponent
+          fields:
+            title: 'GET IN TOUCH'
+          placeholders:
+            footerSingleBlockData:
+              - componentName: FooterSingleBlockData2Component
+                fields:
+                  phone: "555-3848-374"
+                  email: "plamen@example.com"
+                  webpage: "www.plamen.com"
+                  adress: "Karnobat, 172 Stara planina, street."
+        footer-single-block-3:
+        - componentName: FooterSingleBlockComponent
+          fields:
+            title: 'USEFUL LINKS'
+          placeholders:
+            footerSingleBlockData:
+              - componentName: FooterSingleBlockData3Component
+                fields:
+                  staff:
+                    href: "/teachers-staff"
+                    text: "Teachers & Staff"
+                    target: "_self"
+                  courses:
+                    href: "/courses-categories"
+                    text: "Courses Categories"
+                    target: "_self"
+                  categories:
+                    href: "/support"
+                    text: "Support"
+                    target: "_self"
+                  terms:
+                    href: "/terms-conditions"
+                    text: "Terms & Conditions"
+                    target: "_self"
+                  privacy:
+                    href: "/privacy-policy"
+                    text: "Privacy Policy"
+                    target: "_self"
+        footer-single-block-4:
+          - componentName: FooterSingleBlockComponent
+            fields:
+              title: 'Instagram'
+    - componentName: CopyriteComponent
+      fields:
+        copyrightText: 'Copyright © Educat 2022. All rights reserved.'
+        createdByText: 'Created by'
+        createdByLink: 'Edubuzz'
+        privacyTermsText: 'Privacy Policy , Terms & Conditions'
