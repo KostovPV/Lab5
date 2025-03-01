@@ -175,3 +175,17 @@ $border-radius: 8px;
     }
   }
 }
+
+
+@media (max-width: 767px) {
+ .courseCard{
+  max-width: 400px;
+ }
+}
+
+@media (max-width: 480px) {
+  .courseCard{
+   max-width: 280px;
+  }
+  
+ }

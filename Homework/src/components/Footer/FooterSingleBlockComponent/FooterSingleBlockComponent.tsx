@@ -10,7 +10,7 @@ type FooterSingleBlockComponentProps = ComponentProps & {
 };
 
 const FooterSingleBlockComponent = (props: FooterSingleBlockComponentProps): JSX.Element => {
-  console.log('Image Field:', props.fields.image);
+  // console.log('Image Field:', props.fields.image);
 
   const imageSrc = typeof props.fields.image?.value === 'string' 
     ? props.fields.image.value 

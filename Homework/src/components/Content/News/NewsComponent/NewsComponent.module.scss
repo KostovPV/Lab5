@@ -63,9 +63,17 @@ $transition-duration: 0.3s;
   .title,
   .description {
     text-align: left;
-    max-width: 400px;
+    // max-width: 400px;
     width: 100%;
     margin: 0 auto;
     padding: 0 1rem 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .title,
+  .description {
+    // max-width: 400px;
+    padding: 0 2rem 1rem;
   }
 }

@@ -1,5 +1,5 @@
 .subscribeSection {
-  background: #1f3971;
+  background: #1F3971 ;
   color: var(--bs-white);
   display: flex;
   flex-direction: row;
@@ -175,6 +175,9 @@
 @media (max-width: 767px) {
   .container{
     width: 90%;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 0 auto;
   }
   .subscribeSection {
     flex-direction: column;
@@ -182,17 +185,22 @@
     justify-items: center;
     align-items: center;
   }
-
-  .additionalWrapper {
-    width: 65%;
-    flex-direction: column;
-    text-align: left;
-  }
   .subscribeInfoWrapper {
     margin-left: 0;
   }
   .subscribeForm {
-    width: 70%;
-    margin-right:0 auto;
+    width: 60%;
+    margin-left:0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .container{
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  .container{
+    width: 100%;
   }
 }

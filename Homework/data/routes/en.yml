@@ -635,7 +635,7 @@ placeholders:
               title: 'Learn English with Ease'
               description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.'
               image: /media/img/news1.webp
-              date: '25 Jun 2050'
+              date: '25 Jan 2025'
               views: 59
               comments: 19
               readMoreLink:
@@ -648,7 +648,7 @@ placeholders:
               title: 'Advanced Photoshop'
               description: 'Learn advanced Photoshop techniques to enhance your design skills. Join the course now'
               image: /media/img/news2.jpg
-              date: '26 Jun 2050'
+              date: '24 Feb 2025'
               views: 75
               comments: 23
               readMoreLink:
@@ -661,7 +661,7 @@ placeholders:
               title: 'Mastering Illustrator CC'
               description: 'Master the fundamentals of Illustrator and create stunning vector graphics. Become a pro now'
               image: /media/img/news3.jpg
-              date: '27 Jun 2050'
+              date: '21 Jan 2025'
               views: 88
               comments: 30
               readMoreLink:

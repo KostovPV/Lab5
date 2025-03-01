@@ -74,9 +74,29 @@
   .title,
   .description {
     text-align: left;
-    max-width: 400px; // Matches the width of the card
-    width: 100%; // Ensures they take up the full width of the container
-    margin: 0 auto; // Centers the title and description
+    max-width: 430px;
+    width: 100%; 
+    margin: 0 auto; 
     padding: 0 1rem 1rem;
+  }
+}
+@media (max-width: 50px) {
+  .courseContainer {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .containerWrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .title,
+  .description {
+   
+    width: 95%; 
+   
   }
 }

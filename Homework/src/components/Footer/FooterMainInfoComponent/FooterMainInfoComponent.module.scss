@@ -1,5 +1,5 @@
 .footerMainInfo {
-  background-color: #0d2b56;
+  background-color: #1F3971 ;
   padding: 60px 0;
 }
 
@@ -28,7 +28,7 @@
   }
 }
 /* Two columns (2 per row) layout for screens below 993px */
-@media (max-width: 1050px) {
+@media (max-width: 993px) {
   .container {
     justify-content: center;
   }
