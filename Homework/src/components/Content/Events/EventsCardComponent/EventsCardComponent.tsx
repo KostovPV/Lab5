@@ -2,6 +2,8 @@ import { Field, ImageField, LinkField, Text, withDatasourceCheck, Link } from '@
 import { ComponentProps } from 'lib/component-props';
 import styles from './EventsCardComponent.module.scss';
 
+// Import Material Icons
+import { AccessTime, Room } from '@mui/icons-material';
 
 type EventsCardProps = ComponentProps & {
   fields: {
@@ -31,10 +33,17 @@ const EventsCardComponent = ({ fields }: EventsCardProps): JSX.Element => {
         <h3 className={styles.title}>
           <Link field={fields.title} />
         </h3>
+
+        {/* Meta Section with Icons */}
         <div className={styles.meta}>
-          <span>{fields.time.value}</span>
-          <span>{fields.location.value}</span>
+          <span>
+            <AccessTime className={styles.icon} fontSize="small" /> {fields.time.value}
+          </span>
+          <span>
+            <Room className={styles.icon} fontSize="small" /> {fields.location.value}
+          </span>
         </div>
+
         <Text tag="p" field={fields.description} className={styles.description} />
         <div className={styles.buttonWrapper}>
           <Link field={fields.learnMoreLink} className={styles.eventButton} />

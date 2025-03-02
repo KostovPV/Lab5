@@ -1,4 +1,3 @@
-
 import {
   Text,
   Field,
@@ -41,15 +40,15 @@ const HeroComponent = (props: HeroComponentProps): JSX.Element => {
 
   return (
     <div className={styles.heroContainer} style={{ backgroundImage: `url(${backgroundImage})` }}>
-      <div className={styles.content}>
-        {!hideHeading && <Text tag="h1" field={props.fields.heading} className={styles.heading} />}
-        <RichText field={props.fields.description} className={styles.description} />
-        <Link
-          field={props.fields.ctaLink}
-          className={`
-          
-            ${styles[buttonStyleValue]}`}
-        />
+      <div className={styles.container}>
+        <div className={styles.content}>
+          {!hideHeading && <Text tag="h1" field={props.fields.heading} className={styles.heading} />}
+          <RichText field={props.fields.description} className={styles.description} />
+          <Link
+            field={props.fields.ctaLink}
+            className={styles[buttonStyleValue]}
+          />
+        </div>
       </div>
     </div>
   );
