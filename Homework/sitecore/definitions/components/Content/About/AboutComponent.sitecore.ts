@@ -18,5 +18,7 @@ export default function AboutComponent(manifest: Manifest): void {
       { name: 'altText', type: CommonFieldTypes.SingleLineText },
     ],
     params: [{ name: 'imageLeftAlignment', type: CommonFieldTypes.Checkbox }],
+    // params: [{ name: 'imageLeftAlignment', type: CommonFieldTypes.SingleLineText }]
+
   });
 }

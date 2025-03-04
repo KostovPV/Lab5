@@ -59,12 +59,12 @@ const NewsComponent = ({ fields, rendering }: NewsComponentProps): JSX.Element =
     .filter(isValidNewsItem)
     .map((item) => item as NewsItemRendering);
 
-  console.log("📰 Valid News Items Before Sorting:", newsItems);
+  // console.log("📰 Valid News Items Before Sorting:", newsItems);
 
   // ✅ Sort news items in **descending** order by date (newest first)
   const sortedNewsItems = [...newsItems].sort((a, b) => parseDate(b.fields.date) - parseDate(a.fields.date));
 
-  console.log("📅 Sorted News Items (Newest First):", sortedNewsItems);
+  // console.log("📅 Sorted News Items (Newest First):", sortedNewsItems);
 
   return (
     <section className={styles.newsSection}>

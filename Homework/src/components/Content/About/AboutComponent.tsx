@@ -26,7 +26,10 @@ const AboutComponent = ({ fields, params }: AboutComponentProps): JSX.Element =>
   const imageUrl =
     typeof fields.image.value === 'string' ? fields.image.value : fields.image.value?.src;
 
-  const imageLeft = params.imageLeftAlignment === '1' || params.ImageLeftAlignment === '1';
+    console.log("imageLeftAlignment:", params);
+  // const imageLeft = params.imageLeftAlignment === '1' || params.ImageLeftAlignment === '1';
+  const imageLeft = params?.imageLeftAlignment === 'true' || params?.ImageLeftAlignment === 'true';
+
 
   const textContent = (
     <div key="text" className={styles.aboutContainer}>

@@ -11,265 +11,508 @@ placeholders:
                 value: Home
               url:
                 value:
-                  href: '/'
-                  target: '_blank'
+                  href: '/index.html'
+                  target: '_self'
               children:
                 - fields:
                     title:
                       value: Home Version 1
                     url:
                       value:
-                        href: '/'
-                        target: '_blank'
+                        href: '/index.html'
+                        target: '_self'
                     children: []
                 - fields:
                     title:
                       value: Home Version 2
                     url:
                       value:
-                        href: '/'
-                        target: '_blank'
+                        href: '/index-2.html'
+                        target: '_self'
                     children: []
+          - fields:
+              title:
+                value: About
+              url:
+                value:
+                  href: '/about.html'
+                  target: '_self'
+              children: []
           - fields:
               title:
                 value: Gallery
               url:
                 value:
-                  href: '/'
-                  target: '_blank'
+                  href: '/gallery.html'
+                  target: '_self'
               children:
                 - fields:
                     title:
-                      value: Galleryes
+                      value: Gallery
                     url:
                       value:
-                        href: '/'
-                        target: '_blank'
+                        href: '/gallery.html'
+                        target: '_self'
                     children: []
                 - fields:
                     title:
                       value: Gallery Filtering
                     url:
                       value:
-                        href: '/'
-                        target: '_blank'
+                        href: '/gallery-2.html'
+                        target: '_self'
                     children: []
                 - fields:
                     title:
                       value: Gallery Four Column
                     url:
                       value:
-                        href: '/'
-                        target: '_blank'
+                        href: '/gallery-four-column.html'
+                        target: '_self'
                     children: []
           - fields:
               title:
                 value: Courses
               url:
                 value:
-                  href: '/'
-                  target: '_blank'
+                  href: '/course.html'
+                  target: '_self'
               children:
                 - fields:
                     title:
                       value: Courses Details
                     url:
                       value:
-                        href: '/'
-                        target: '_blank'
+                        href: '/courses-details.html'
+                        target: '_self'
                     children: []
           - fields:
               title:
                 value: Features
               url:
                 value:
-                  href: '/'
-                  target: '_blank'
+                  href: '#'
+                  target: '_self'
               children:
                 - fields:
                     title:
                       value: Blog
                     url:
                       value:
-                        href: '/'
-                        target: '_blank'
+                        href: '#'
+                        target: '_self'
                     children:
                       - fields:
                           title:
                             value: Blog
                           url:
                             value:
-                              href: '/'
-                              target: '_blank'
+                              href: '/blog.html'
+                              target: '_self'
                           children: []
                       - fields:
                           title:
                             value: Blog Details
                           url:
                             value:
-                              href: '/'
-                              target: '_blank'
+                              href: '/blog-details.html'
+                              target: '_self'
+                          children: []
+                      - fields:
+                          title:
+                            value: Blog Left Sidebar
+                          url:
+                            value:
+                              href: '/blog-left-sidebar.html'
+                              target: '_self'
+                          children: []
+                      - fields:
+                          title:
+                            value: Blog No Sidebar
+                          url:
+                            value:
+                              href: '/blog-no-sidebar.html'
+                              target: '_self'
                           children: []
                 - fields:
                     title:
                       value: Shop
                     url:
                       value:
-                        href: '/'
-                        target: '_blank'
+                        href: '#'
+                        target: '_self'
                     children:
                       - fields:
                           title:
-                            value: Shops
+                            value: Shop
                           url:
                             value:
-                              href: '/'
-                              target: '_blank'
+                              href: '/shop.html'
+                              target: '_self'
+                          children: []
+                      - fields:
+                          title:
+                            value: Single Product
+                          url:
+                            value:
+                              href: '/single-product.html'
+                              target: '_self'
                           children: []
                       - fields:
                           title:
                             value: Shopping Cart
                           url:
                             value:
-                              href: '/'
-                              target: '_blank'
+                              href: '/cart.html'
+                              target: '_self'
+                          children: []
+                      - fields:
+                          title:
+                            value: Wishlist
+                          url:
+                            value:
+                              href: '/wishlist.html'
+                              target: '_self'
+                          children: []
+                      - fields:
+                          title:
+                            value: Checkout
+                          url:
+                            value:
+                              href: '/checkout.html'
+                              target: '_self'
+                          children: []
+                      - fields:
+                          title:
+                            value: Login - Register
+                          url:
+                            value:
+                              href: '/login-register.html'
+                              target: '_self'
                           children: []
           - fields:
               title:
                 value: Pages
               url:
                 value:
-                  href: '/'
-                  target: '_blank'
+                  href: '/index.html'
+                  target: '_self'
               children:
                 - fields:
                     title:
                       value: Team Details
                     url:
                       value:
-                        href: '/'
-                        target: '_blank'
+                        href: '/team-details.html'
+                        target: '_self'
                     children: []
                 - fields:
                     title:
                       value: Courses Page
                     url:
                       value:
-                        href: '/'
-                        target: '_blank'
+                        href: '/course.html'
+                        target: '_self'
                     children: []
                 - fields:
                     title:
-                      value: Course Details Page
+                      value: Contact
                     url:
                       value:
-                        href: '/'
-                        target: '_blank'
-                    children: []
-                - fields:
-                    title:
-                      value: Event page
-                    url:
-                      value:
-                        href: '/'
-                        target: '_blank'
-                    children: []
-                - fields:
-                    title:
-                      value: Blog
-                    url:
-                      value:
-                        href: '/'
-                        target: '_blank'
-                    children: []
-                - fields:
-                    title:
-                      value: Blog Details Page
-                    url:
-                      value:
-                        href: '/'
-                        target: '_blank'
-                    children: []
-                - fields:
-                    title:
-                      value: Blog Left Sidebar
-                    url:
-                      value:
-                        href: '/'
-                        target: '_blank'
-                    children: []
-                - fields:
-                    title:
-                      value: Blog No Sidebar
-                    url:
-                      value:
-                        href: '/'
-                        target: '_blank'
-                    children: []
-                - fields:
-                    title:
-                      value: Wishlist Page
-                    url:
-                      value:
-                        href: '/'
-                        target: '_blank'
-                    children: []
-                - fields:
-                    title:
-                      value: Checkout Page
-                    url:
-                      value:
-                        href: '/'
-                        target: '_blank'
-                    children: []
-                - fields:
-                    title:
-                      value: Shopping Cart Page
-                    url:
-                      value:
-                        href: '/'
-                        target: '_blank'
-                    children: []
-                - fields:
-                    title:
-                      value: Login Page
-                    url:
-                      value:
-                        href: '/'
-                        target: '_blank'
-                    children: []
-                - fields:
-                    title:
-                      value: 404 Error
-                    url:
-                      value:
-                        href: '/'
-                        target: '_blank'
+                        href: '/contact.html'
+                        target: '_self'
                     children: []
           - fields:
               title:
                 value: Shop
               url:
                 value:
-                  href: '/'
-                  target: '_blank'
+                  href: '/shop.html'
+                  target: '_self'
               children:
                 - fields:
                     title:
                       value: Single Product Page
                     url:
                       value:
-                        href: '/'
-                        target: '_blank'
+                        href: '/single-product.html'
+                        target: '_self'
                     children: []
           - fields:
               title:
                 value: Contact
               url:
                 value:
-                  href: '/'
-                  target: '_blank'
+                  href: '/contact.html'
+                  target: '_self'
               children: []
+    # - componentName: MenuComponent
+    #   fields:
+    #     menuItems:
+    #       - fields:
+    #           title:
+    #             value: Home
+    #           url:
+    #             value:
+    #               href: '/'
+    #               target: '_blank'
+    #           children:
+    #             - fields:
+    #                 title:
+    #                   value: Home Version 1
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #             - fields:
+    #                 title:
+    #                   value: Home Version 2
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #       - fields:
+    #           title:
+    #             value: Gallery
+    #           url:
+    #             value:
+    #               href: '/'
+    #               target: '_blank'
+    #           children:
+    #             - fields:
+    #                 title:
+    #                   value: Galleryes
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #             - fields:
+    #                 title:
+    #                   value: Gallery Filtering
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #             - fields:
+    #                 title:
+    #                   value: Gallery Four Column
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #       - fields:
+    #           title:
+    #             value: Courses
+    #           url:
+    #             value:
+    #               href: '/'
+    #               target: '_blank'
+    #           children:
+    #             - fields:
+    #                 title:
+    #                   value: Courses Details
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #       - fields:
+    #           title:
+    #             value: Features
+    #           url:
+    #             value:
+    #               href: '/'
+    #               target: '_blank'
+    #           children:
+    #             - fields:
+    #                 title:
+    #                   value: Blog
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children:
+    #                   - fields:
+    #                       title:
+    #                         value: Blog
+    #                       url:
+    #                         value:
+    #                           href: '/'
+    #                           target: '_blank'
+    #                       children: []
+    #                   - fields:
+    #                       title:
+    #                         value: Blog Details
+    #                       url:
+    #                         value:
+    #                           href: '/'
+    #                           target: '_blank'
+    #                       children: []
+    #             - fields:
+    #                 title:
+    #                   value: Shop
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children:
+    #                   - fields:
+    #                       title:
+    #                         value: Shops
+    #                       url:
+    #                         value:
+    #                           href: '/'
+    #                           target: '_blank'
+    #                       children: []
+    #                   - fields:
+    #                       title:
+    #                         value: Shopping Cart
+    #                       url:
+    #                         value:
+    #                           href: '/'
+    #                           target: '_blank'
+    #                       children: []
+    #       - fields:
+    #           title:
+    #             value: Pages
+    #           url:
+    #             value:
+    #               href: '/'
+    #               target: '_blank'
+    #           children:
+    #             - fields:
+    #                 title:
+    #                   value: Team Details
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #             - fields:
+    #                 title:
+    #                   value: Courses Page
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #             - fields:
+    #                 title:
+    #                   value: Course Details Page
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #             - fields:
+    #                 title:
+    #                   value: Event page
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #             - fields:
+    #                 title:
+    #                   value: Blog
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #             - fields:
+    #                 title:
+    #                   value: Blog Details Page
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #             - fields:
+    #                 title:
+    #                   value: Blog Left Sidebar
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #             - fields:
+    #                 title:
+    #                   value: Blog No Sidebar
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #             - fields:
+    #                 title:
+    #                   value: Wishlist Page
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #             - fields:
+    #                 title:
+    #                   value: Checkout Page
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #             - fields:
+    #                 title:
+    #                   value: Shopping Cart Page
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #             - fields:
+    #                 title:
+    #                   value: Login Page
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #             - fields:
+    #                 title:
+    #                   value: 404 Error
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #       - fields:
+    #           title:
+    #             value: Shop
+    #           url:
+    #             value:
+    #               href: '/'
+    #               target: '_blank'
+    #           children:
+    #             - fields:
+    #                 title:
+    #                   value: Single Product Page
+    #                 url:
+    #                   value:
+    #                     href: '/'
+    #                     target: '_blank'
+    #                 children: []
+    #       - fields:
+    #           title:
+    #             value: Contact
+    #           url:
+    #             value:
+    #               href: '/'
+    #               target: '_blank'
+    #           children: []
     - componentName: MobileMenuComponent
       fields:
         # menuIcon:
@@ -541,8 +784,9 @@ placeholders:
           href: '#'
           text: 'View cources'
           target: '_blank'
-        backgroundImage:
-          value: /media/img/heroImage.webp
+        backgroundImages:
+          - value: /media/img/heroImage.webp
+          - value: /media/img/infoComponentBackground.webp
       params:
         hideHeading: false
         buttonStyleClass: 'primary'

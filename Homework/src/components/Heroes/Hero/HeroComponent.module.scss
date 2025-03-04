@@ -10,11 +10,6 @@
   justify-content: center;
   align-items: flex-start;
 
-
-  .container {
-    max-width: 1140px;
-  }
-
   /* Overlay */
   &::before {
     content: '';
@@ -118,9 +113,9 @@
   background-color: yellow !important;
 }
 
-.primary>a,
-.danger>a,
-.warning>a {
+.primary > a,
+.danger > a,
+.warning > a {
   background-color: inherit !important;
   color: inherit !important;
   border-radius: inherit;
@@ -128,15 +123,103 @@
   text-decoration: none;
 }
 
-@media (min-width: 1200px){
-  .heroContainer {
-    align-items: center;
+
+
+/* Place Buttons on the Sides */
+.prevButton {
+  left: 30px;
+}
+
+.nextButton {
+  right: 30px;
+}
+@keyframes fadeInDown {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
   }
-  .content{
-  padding: 0;
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
+@keyframes fadeOutUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+
+/* Apply animations to text and content only */
+.fadeInDown {
+  animation: fadeInDown 0.8s ease-in-out;
+}
+
+.fadeOutUp {
+  animation: fadeOutUp 0.8s ease-in-out;
+}
+
+/* 🚀 Ensure Buttons Are Static */
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  background: #1f3971 !important;
+  color: #fff !important;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 50px !important;
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 12px;
+}
+
+/* 🚀 Hover Effect - Orange */
+.prevButton:hover,
+.nextButton:hover {
+  background: orange !important;
+  opacity: 1;
+}
+
+/* Place Buttons on the Sides */
+.prevButton {
+  left: 30px;
+}
+
+.nextButton {
+  right: 30px;
+}
+
+/* Hide Buttons on Smaller Screens */
+@media (max-width: 993px) {
+  .prevButton,
+  .nextButton {
+    display: none;
+  }
+}
+
+
+/* Hide Buttons on Smaller Screens */
+@media (max-width: 993px) {
+  .prevButton,
+  .nextButton {
+    display: none;
+  }
+}
 @media (min-width: 1200px) and (max-width: 1500px) {
   .content {
     width: 60%;
@@ -160,7 +243,6 @@
     justify-content: flex-start;
     height: auto;
   }
-
   .content {
     width: 100%;
     max-width: 100%;
@@ -169,19 +251,16 @@
     text-align: center;
     align-items: center;
   }
-
   .heading {
     text-align: center;
     margin-bottom: 10px;
   }
-
   .content h1 {
     font-size: 28px;
     line-height: 1.2;
     padding-bottom: 5px;
     text-align: center;
   }
-
   .description {
     font-size: 20px;
     line-height: 24px;
